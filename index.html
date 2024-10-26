@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="lib/bootstrap.min.css">
+    <style>
+        header,
+        form {
+            padding: 10px;
+            background-color: transparent;
+            text-align: center;
+        }
+
+        body {
+            position: relative;
+        }
+        
+        header {
+            font-family: "Cinzel", serif;
+            -webkit-transition:.5s;
+            -moz-transition:.5s;
+            transition:.5s;
+        }
+        
+        header:hover {
+            background-color: white;
+            transition-duration: 600ms;
+        }
+
+        header img {
+            max-height: 200px;
+            margin-right: 10px;
+        }
+
+        header.ativo {
+            background-color: white;
+        }
+
+        #transparente {
+            background-color: transparent;
+            border-color: black;
+        }
+
+        #btn-adicionarcarrinho button {
+            color: #fff;
+            background-color: #000;
+            padding: 7px;
+            cursor: pointer;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            width: 70%;
+            margin-top: 8px;
+            font-size: 1em;
+            margin-bottom: 50px;
+        }
+
+        .produtos-cosme {
+            padding-top: 165px;
+        }
+
+        .produtos-cosme h2 {
+            border-bottom: 2px solid;
+            font-family: "Cinzel", serif;
+        }
+
+        .produtos-cosme img {   
+            width: 250px;
+            height: 250px;
+        }
+
+        .produtos-cosme2 {
+            padding-top: 165px;
+        }
+
+        .produtos-cosme2 h2 {
+            border-bottom: 2px solid;
+            font-family: "Cinzel", serif;
+        }
+
+        .produtos-cosme2 img {
+            padding-top: 10px;
+            width: 250px;
+            height: 250px;
+        }
+    </style> <!--style-->
+</head>
+<body>
+    <header class="fixed-top" id="Logo-site">
+        <div class="navbar navbar onTop">
+            <div class="container">
+                <h1>HANBADA - Cosméticos e Perfumaria</h1>
+            </div>
+        </div>
+        <div>
+            <nav id="navbar-lateral" class="navbar  navbar-expand-lg bg-body-secundary">
+                <div class="container-fluid">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link" aria-current="page" href="#nav-carousel">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link" aria-current="page" href="#cosmeticos-produtos">Cosméticos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a style="font-size: 18px;" class="nav-link" aria-current="page" href="#perfumaria-produtos">Perfumaria</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                        <a style="font-size: 18px;" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Contate-nos
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#mensagem-sac">Mande uma Mensagem</a></li>
+                            <li><hr class="dropdown-divider"></li>
+                            <li><a class="dropdown-item" href="#mensagem-sac">Contato do Sac</a></li>
+                        </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex" role="search">
+                        <input id="transparente" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-dark" type="submit">Search</button>
+                    </form>
+                    </div>
+                </div>
+                </nav>
+        </div>
+    </header> <!--header-->
+    <div data-bs-spy="scroll" data-bs-target="#navbar-lateral" data-offset="0">
+        <nav id="nav-carousel">
+            <div>
+                <div id="carousel-exemplo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div data-bs-interval="3000" class="carousel-item active">
+                            <img style="height: 700px; width: 1180;" class="d-block w-100" src="/images/ai-generated-8993719_1280.png" />
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item ">
+                            <img style="height: 700px; width: 1180;" class="d-block w-100" src="/images/hair-care-4541744_1280.jpg" />
+                        </div>
+                        <div data-bs-interval="3000" class="carousel-item ">
+                            <img style="height: 700px; width: 1180;" class="d-block w-100" src="/images/perfume-3275950_1280.jpg" />
+                        </div>
+                    </div>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="prev" class="carousel-control-prev" type="button">
+                        <span class="carousel-control-prev-icon"></span>
+                    </button>
+                    <button data-bs-target="#carousel-exemplo" data-bs-slide="next" class="carousel-control-next" type="button">
+                        <span class="carousel-control-next-icon"></span>
+                    </button>
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carousel-exemplo" class="active" data-bs-slide-to="0"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="1"></button>
+                        <button type="button" data-bs-target="#carousel-exemplo" data-bs-slide-to="2"></button>
+                    </div>
+                </div>
+            </div>
+        </nav> <!--nav-->
+        <section class="produtos-cosme" id="cosmeticos-produtos">
+            <div class="container">
+                <h2>Cosméticos</h2>
+            </div>
+            <div class="container">
+                <div id="btn-adicionarcarrinho" class="row">
+                    <div style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-01 at 15.22.39 (4).jpeg" alt="">
+                        <h5>LA ROCHE POSAY Cicaplast Baume B5+ com Água Termal 40ml</h5>
+                        <p>R$: 109,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div style="padding-bottom: 70px;" class="col-lg-4 col-md-6 ">
+                        <img src="/images/WhatsApp Image 2024-10-01 at 15.22.40 (1).jpeg" alt="">
+                        <h5>Água Micelar Bioderma Sensibio H2o Sensitiv Skin - 500ml</h5>
+                        <p>R$: 89,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div style=" padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-01 at 15.22.40 (4).jpeg" alt="">
+                        <h5>L'ORÉAL Shampoo e Máscara 300ml + 250ml L'ORÈAl NutriOil</h5>
+                        <p>R$: 249,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-01 at 15.22.40.jpeg" alt="">
+                        <h5>Sebastian Professional Dark Oil Styling Anti Frizz Touch Care 90ml</h5>
+                        <p>R$: 129,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-01 at 15.22.41.jpeg" alt="">
+                        <h5>Sabonete Bioderma Ultra-Douceur Atoderm Gel Douche 500ml</h5>
+                        <p>R$: 69,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-03 at 16.20.45.jpeg" alt="">
+                        <h5>Kit Truss Hair Protector 250ml + Uso Obrigatório Reconstrutor 260ml</h5>
+                        <p> R$: 156,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                </div>
+            </div>
+        </section> <!--section-->
+        <section class="produtos-cosme2" id="perfumaria-produtos">
+            <div class="container">
+                <h2>Perfumaria</h2>
+            </div>
+            <div class="container">
+                <div id="btn-adicionarcarrinho" class="row">
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="./images/WhatsApp Image 2024-10-26 at 19.19.59.jpeg" alt="">
+                        <h5> GOOD GIRL Carolina Herrera NY 30ml</h5>
+                        <p>R$: 110,00</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-26 at 19.19.59 (1).jpeg" alt="">
+                        <h5> 212 SEXY Carolina Herrera Ny 100ml</h5>
+                        <p>R$: 260,00</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-26 at 19.19.59 (2).jpeg" alt="">
+                        <h5>Miss Dior Eau de Toilette 70ml</h5>
+                        <p>R$: 230,00</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-26 at 19.20.00.jpeg" alt="">
+                        <h5>212 Men Vip Carolina Herrera NY 100ml</h5>
+                        <p>R$: 245,00</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-26 at 19.20.00 (1).jpeg" alt="">
+                        <h5>Sauvage Dior Eau de Toilette 100ml</h5>
+                        <p>R$: 180,00</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                    <div id="imagens-perfu" style="padding-bottom: 70px;" class="col-lg-4 col-md-6">
+                        <img src="/images/WhatsApp Image 2024-10-26 at 19.20.00 (2).jpeg" alt="">
+                        <h5>Jean Paul Gaultter "Le Male" Le Parfum 100ml</h5>
+                        <p>R$: 864,90</p>
+                        <button type="button">Adicionar ao Carrinho</button>
+                    </div>
+                </div> 
+            </div>       
+        </section> <!--section-->
+    </div>
+    <div class="container" id="cards">
+        <div class="card mb-3">
+            <img class="card-img-top" src='/images/panorama-1249998_1920.jpg' alt="imagen do card floresta com uma estrada de terra">
+            <div class="card-body">
+                <h5 class="card-title">Card bunito</h5>
+                <p class="card-text">Tu que habitas sob a proteção do Altíssimo, que moras à sombra do Onipotente, dize ao Senhor: Sois meu refúgio e minha cidadela, meu Deus, em que eu confio. É ele quem te livrará do laço do caçador, e da peste perniciosa. Ele te cobrirá com suas plumas, sob suas asas encontrarás refúgio. Sua fidelidade te será um escudo de proteção. Tu não temerás os terrores noturnos, nem a flecha que voa à luz do dia,</p>
+                <p class="card-text">
+                    <small class="text-muted">Último update 3 mins atrás</small>
+                </p>
+            </div>
+        </div>
+        <div id="mensagem-sac" class="card d-flex flex-wrap justify-content-between align-items-center">
+            <div class="card-body">
+                Mande mensagens para: HANBADA1@gmail.com  |  Entre em Contato com o SAC tel: (73) 9 4002-8922
+            </div>
+        </div>
+    </div>   <!--cards--> 
+    <footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+            <p style="padding-left: 10px;" class="col-md-4 mb-0 text-body-secondary">© 2024 Company, Inc</p>
+
+        <h5 style="font-family: 'Cinzel', serif; font-size: 25px;" class="col-md-4 d-flex align-items-center justify-content-center">
+            HANBADA
+        </h5>
+        
+        <ul class="nav col-md-4 justify-content-end">
+            <li class="nav-item">
+                <a href="#nav-carousel" class="nav-link px-2 text-body-secondary">Home</a>
+            </li>
+            <li class="nav-item">
+                <a href="#cosmeticos-produtos" class="nav-link px-2 text-body-secondary">Products</a>
+            </li>
+            <li class="nav-item">
+                <a href="FAQs.html" class="nav-link px-2 text-body-secondary">FAQs</a>
+            </li>
+        </ul>
+    </footer> <!--footer-->
+
+    <script src="lib/bootstrap.bundle.min.js"></script>
+    <script>
+        window.addEventListener('scroll', function(){
+    var menu = document.querySelector('header');
+    menu.classList.toggle('ativo', window.scrollY > 0);
+    })
+    </script> <!--script-->
+</body>
+</html>
